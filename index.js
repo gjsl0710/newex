@@ -10,15 +10,11 @@ require('dotenv').config();
 const sleep = (ms) => {return new Promise(resolve=>{setTimeout(resolve,ms)})}
 client.on('ready', async() => {   
     while(1) {
-      client.user.setActivity(`327명의 사용자와 함께`)
+      client.user.setActivity(`327명의 사용자 감지!`)
       await sleep(4000)
-      client.user.setActivity(`${client.guilds.cache.size}개의 서버안에서`)
+      client.user.setActivity(`${client.guilds.cache.size}개의 서버에서 사용중!`)
       await sleep(4000)
       client.user.setActivity(`문아 도와줘`)
-      await sleep(4000)
-      client.user.setActivity(`Run with 327 People`)
-      await sleep(4000)
-      client.user.setActivity(`Run with ${client.guilds.cache.size} Server`)
       await sleep(4000)
     } 
   })
