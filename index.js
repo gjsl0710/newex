@@ -7,6 +7,34 @@ const { join } = require('path');
 client.commands= new Discord.Collection();
 require('dotenv').config();
 
+const sleep = (ms) => {return new Promise(resolve=>{setTimeout(resolve,ms)})}
+client.on('ready', async() => {   
+    while(1) {
+      client.user.setActivity(`327명의 사용자와 함께`)
+      await sleep(4000)
+      client.user.setActivity(`${client.guilds.cache.size}개의 서버안에서`)
+      await sleep(4000)
+      client.user.setActivity(`문아 도와줘`)
+      await sleep(4000)
+      client.user.setActivity(`Run with 327 People`)
+      await sleep(4000)
+      client.user.setActivity(`Run with ${client.guilds.cache.size} Server`)
+      await sleep(4000)
+    } 
+  })
+  
+  client.on('message', async message => {
+    if (/\<\@\![0-9]+\>/.test(message.content) === true) {
+        if (message.author.bot) return
+        message.channel.send(`**${message.author.tag}** 맨션 감지 :sneezing_face:!`)
+      }});
+
+      client.on('message', async message => {
+        if (/<@&[0-9]+>/.test(message.content) === true) {
+          if (message.author.bot) return
+          message.channel.send(`***${message.author.tag}*** 님의 **역할**멘션감지 :sneezing_face:!`)
+        }});
+
 const commandFile = readdirSync(join(__dirname, "commands")).filter(file => file.endsWith("js"));
 
 for (const file of commandFile) {
