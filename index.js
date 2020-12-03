@@ -16,6 +16,12 @@ client.on('ready', async() => {
       await sleep(4000)
       client.user.setActivity(`문아 도와줘`)
       await sleep(4000)
+      client.user.setActivity(`업데이트!`)
+      await sleep(4000)
+      client.user.setActivity(`Update!`)
+      await sleep(4000)
+      client.user.setActivity(`V2.12.3.0325`)
+      await sleep(4000)
     } 
   })
   
