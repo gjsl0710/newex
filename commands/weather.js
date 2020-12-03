@@ -35,6 +35,7 @@ module.exports = {
         .addField('풍향', current.winddisplay, true)
         .addField('체감 온도', `${current.feelslike}°`, true)
         .addField('습도', `${current.humidity}%`, true)
+        .setColor('#FFFF')
 
 
         message.channel.send(weatherinfo)

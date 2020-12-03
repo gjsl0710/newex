@@ -2,13 +2,13 @@ const Discord = require('discord.js')
 
 
 module.exports = (client) => {
-     client.on('message', async message => {
+    client.on('message', async message => {
          if (!message.content.startsWith(prefix)) return
 
          const args = message.content.substring(prefix.length).split(' ')
          const command = args[0]
 
-         if(message.content.startsWith(`${prefix}투표`)) {
+         if(message.content.startsWith(`문아 투표`)) {
              if(!message.member.hasPermission('KICK_MEMBERS')) return message.channel.send('관리자용 커맨드 입니다')
              const polls = args.slice(1).join(' ')
 

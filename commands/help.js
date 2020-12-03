@@ -15,6 +15,7 @@ module.exports = {
         .addField(`${prefix}밴`, '서버에서 유저를 차단 합니다')
         .addField(`${prefix}청소`, '메시지를 삭제합니다')
         .addField(`${prefix}날씨`, '해당 지역의 날씨를 알려줍니다')
+        .setColor('#FFFF')
         .setTimestamp()
 
         const page2 = new Discord.MessageEmbed()
@@ -23,6 +24,7 @@ module.exports = {
         .addField(`${prefix}글자`, '영어를 문자로 출력합니다')
         .addField(`${prefix}초대`, 'http://asq.kr/moonbot')
         .addField(`${prefix}실검`, '현재 네이버 실시간검색어 순위를 보여줍니다')
+        .setColor('#FFFF')
         .setTimestamp()
 
         const page3 = new Discord.MessageEmbed()
@@ -31,6 +33,7 @@ module.exports = {
         .addField(`${prefix}계산`, '봇이 대신 계산 해줍니다')
         .addField(`${prefix}코로나`, '해당 지역의 코로나 상황을 알려줍니다')
         .addField(`${prefix}cmm`, 'Change my MIND')
+        .setColor('#FFFF')
         .setTimestamp()
 
         const page4 = new Discord.MessageEmbed()
@@ -38,6 +41,7 @@ module.exports = {
         .addField(`${prefix}경고`, '유저에게 경고를 줍니다')
         .addField(`${prefix}경고목록`, '유저의 경고 목록을 보여줍니다')
         .addField(`${prefix}경고삭제`, '유저의 경고를 삭제합니다')
+        .setColor('#FFFF')
         .setTimestamp()
 
         const page5 = new Discord.MessageEmbed()
@@ -46,11 +50,13 @@ module.exports = {
         .addField( `${prefix}서버`, '해당 서버의 정보를 불러옵니다')
         .addField(`${prefix}타이머`, '해당 초가 지나면 DM으로 테러를 합니다')
         .addField(`${prefix}코드실행`, '이 코드는 자살봇의 매니저만 사용할 수 있습니다')
+        .setColor('#FFFF')
         .setTimestamp()
 
         const page6 = new Discord.MessageEmbed()
         .setTitle('PAGE 6')
         .addField(`${prefix}투표 " "`, '디스코드 이모지를 이용하여 투표를 엽니다')
+        .setColor('#FFFF')
         .setTimestamp()
 
         const pages = [

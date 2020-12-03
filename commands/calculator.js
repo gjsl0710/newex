@@ -11,7 +11,7 @@ module.exports = {
 
         const noArgs = new Discord.MessageEmbed()
         .setTitle(':x: Missing arguments')
-        .setColor('RANDOM')
+        .setColor('#FF0000')
         .setDescription('계산한 숫자 + 기호를 입력 해주세요 ex) 계산 4^2')
         .setTimestamp()
 
@@ -26,7 +26,7 @@ module.exports = {
         }
 
         const embed = new Discord.MessageEmbed()
-        .setColor(0x808080)
+        .setColor('#FFFF')
         .setTitle('계산기')
         .addField('문제', `\`\`\`css\n${args.join(' ')}\`\`\``)
         .addField('값', `\`\`\`css\n${resp}\`\`\``)

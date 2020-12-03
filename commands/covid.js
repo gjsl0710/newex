@@ -31,6 +31,7 @@ module.exports = {
                 .addField('확진자', confirmed)
                 .addField('치료됨', recovered)
                 .addField('사망', deaths)
+                .setColor('#FFFF')
 
                 message.channel.send(embed)
             })
@@ -47,6 +48,7 @@ module.exports = {
                 .addField('확진', confirmed)
                 .addField('치료됨', recovered)
                 .addField('사망', deaths)
+                .setColor('#FFFF')
 
                 message.channel.send(embed)
             }).catch(e => {

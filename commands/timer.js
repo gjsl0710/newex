@@ -20,7 +20,7 @@ module.exports ={
         .setTitle(`타이머를 가동합니다`)
         .setDescription(`타이머 시간 : **${timer[1]}**초 `)
         .setFooter(`${message.author.username}`, message.author.displayAvatarURL())
-        .setColor('#ffffff')
+        .setColor('#FFFF')
         message.channel.send(embed)
         await sleep(`${timer[1]*1000}`)
         message.channel.send(`<@${message.author.id}>, ${timer}초의 타이머가 종료 되었습니다`)
