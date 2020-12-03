@@ -3,8 +3,6 @@ const client = new Discord.Client();
 const { token, prefix } = require('./config.json')
 const { readdirSync } = require('fs');
 const { join } = require('path');
-const token = process.env.token;
-const prefix = process.env.prefox;
 
 client.commands= new Discord.Collection();
 require('dotenv').config();
