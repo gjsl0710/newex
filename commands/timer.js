@@ -26,15 +26,5 @@ module.exports ={
         message.channel.send(`<@${message.author.id}>, ${timer}초의 타이머가 종료 되었습니다`)
         message.author.send(`<@${message.author.id}>타이머가 종료 되었습니다!`)
         await sleep('1000')
-        message.author.send(`<@${message.author.id}>타이머가 종료 되었습니다!`)
-        await sleep('1000')
-        message.author.send(`<@${message.author.id}>타이머가 종료 되었습니다!`)
-        await sleep('1000')
-        message.author.send(`<@${message.author.id}>타이머가 종료 되었습니다!`)
-        await sleep('1000')
-        message.author.send(`<@${message.author.id}>타이머가 종료 되었습니다!`)
-        await sleep('1000')
-        message.author.send(`<@${message.author.id}>타이머가 종료 되었습니다!`)
-        await sleep('1000')
     }
 }
