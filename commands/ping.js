@@ -8,7 +8,8 @@ module.exports = {
 
     async run (client, message, args) {
         const ping = new Discord.MessageEmbed()
-        .setDescription(`🏓\`${Date.now() - message.createdTimestamp}\`ms`);
+        .setDescription(`🏓\`${Date.now() - message.createdTimestamp}\`ms 입니당!`)
+        .setColor('#FFFF')
         message.channel.send(ping);
     }
 }

@@ -5,7 +5,7 @@ module.exports = {
     description: "verify user",
     
     async run (client, message, args) {
-        await message.member.roles.add("753109035292557312");
+        await message.member.roles.add("783972247219339275");
         await message.member.roles.remove("759580049703305226");
 
         message.author.send('인증에 성공 하셨습니다!')
