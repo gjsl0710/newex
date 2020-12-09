@@ -4,6 +4,10 @@ const { token, prefix } = require('./config.json')
 const { readdirSync } = require('fs');
 const { join } = require('path');
 
+client.on('ready', () => { //봇이 준비 되었을때
+  console.log('DISCORD BOT LOGIN') //콘솔 창에 DISCORD BOT LOGIN 이란 문구를 띄웁니다
+})
+
 client.commands= new Discord.Collection();
 require('dotenv').config();
 
