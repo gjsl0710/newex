@@ -1,8 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const { token, prefix } = require('./config.json')
 const { readdirSync } = require('fs');
 const { join } = require('path');
+const token = proces.env.token;
+const prefix = process.env.prefix;
 
 client.on('ready', () => { //봇이 준비 되었을때
   console.log('DISCORD BOT LOGIN') //콘솔 창에 DISCORD BOT LOGIN 이란 문구를 띄웁니다
