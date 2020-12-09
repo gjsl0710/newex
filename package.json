@@ -21,6 +21,7 @@
     "figlet": "^1.5.0",
     "google": "^2.1.0",
     "jimp": "^0.16.1",
+    "lyrics-finder": "^21.4.0",
     "mathjs": "^7.6.0",
     "ms": "^2.1.2",
     "node-fetch": "^2.6.1",
@@ -30,6 +31,10 @@
     "random-puppy": "^1.1.0",
     "tags": "^2.0.10",
     "weather-js": "^2.0.0",
-    "ytdl-core": "^3.3.0"
+    "youtube-sr": "^2.0.4",
+    "yt-search": "^2.5.1",
+    "ytdl-core": "^3.3.0",
+    "ytdl-core-discord": "^1.2.4",
+    "ytpl": "^2.0.0-alpha.3"
   }
 }
